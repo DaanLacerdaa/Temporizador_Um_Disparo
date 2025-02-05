@@ -102,7 +102,7 @@ screen /dev/ttyUSB0 115200
 
 🎥 Demonstração
 
-🔗 Vídeo do projeto no YouTube: []
+🔗 Vídeo do projeto no YouTube: [[Youtube](https://youtu.be/1QAkbUZGQFM)]
 
 🎮 Simulação no Wokwi: [[Wokwi](https://wokwi.com/projects/422013472937946113)]
 

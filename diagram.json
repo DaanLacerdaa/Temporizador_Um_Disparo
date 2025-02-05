@@ -1,6 +1,6 @@
 {
           "version": 1,
-          "author": "Breno Tainan Aguiar",
+          "author": "Danilo Pereira Lacerda",
           "editor": "wokwi",
           "parts": [
                     {
@@ -42,7 +42,7 @@
                     {
                               "type": "wokwi-led",
                               "id": "led1",
-                              "top": 198,
+                              "top": 121.2,
                               "left": 167,
                               "attrs": {
                                         "color": "green"
@@ -51,7 +51,7 @@
                     {
                               "type": "wokwi-led",
                               "id": "led2",
-                              "top": 159.6,
+                              "top": 207.6,
                               "left": 167,
                               "attrs": {
                                         "color": "red"
@@ -60,7 +60,7 @@
                     {
                               "type": "wokwi-led",
                               "id": "led3",
-                              "top": 121.2,
+                              "top": 169.2,
                               "left": 167,
                               "attrs": {
                                         "color": "blue"
@@ -121,22 +121,6 @@
                               "green",
                               [
                                         "h0"
-                              ]
-                    ],
-                    [
-                              "r3:1",
-                              "led1:A",
-                              "green",
-                              [
-                                        "v0"
-                              ]
-                    ],
-                    [
-                              "r2:1",
-                              "led2:A",
-                              "green",
-                              [
-                                        "v0"
                               ]
                     ],
                     [
@@ -203,6 +187,31 @@
                               "btn2:1.r",
                               "pico:GND.8",
                               "black",
+                              [
+                                        "v0"
+                              ]
+                    ],
+                    [
+                              "led2:A",
+                              "r3:1",
+                              "green",
+                              [
+                                        "h9.6",
+                                        "v-9.6"
+                              ]
+                    ],
+                    [
+                              "led1:A",
+                              "r1:1",
+                              "green",
+                              [
+                                        "v0"
+                              ]
+                    ],
+                    [
+                              "r3:1",
+                              "r2:1",
+                              "green",
                               [
                                         "v0"
                               ]

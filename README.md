@@ -1,10 +1,9 @@
-🔴🟢🔵 Projeto: Controle de LEDs com Raspberry Pi Pico
+🔴🟢🔵 Projeto: Controle de LEDs com Raspberry Pi Pico W
 
-Este projeto implementa um sistema de controle de LEDs utilizando o microcontrolador Raspberry Pi Pico. O código em C, baseado no Pico SDK, gerencia a ativação sequencial de LEDs coloridos (vermelho, azul e verde) por meio da interação com um botão físico. O sistema inclui um mecanismo de debounce e controle de estados, garantindo uma operação confiável e previsível.
-
+Este projeto implementa um sistema de controle de LEDs utilizando o microcontrolador Raspberry Pi Pico W . O código em C gerencia a ativação sequencial de LEDs coloridos (vermelho, azul e verde) por meio da interação com um botão físico. O sistema inclui um mecanismo de debounce e controle de estados.
 🎯 Objetivo
 
-O objetivo deste projeto é explorar a interface de controle de GPIOs do Raspberry Pi Pico, implementando:
+O objetivo deste projeto é explorar a interface de controle de GPIOs do Raspberry Pi Pico W, implementando:
 
 Gerenciamento de estados utilizando a enumeração EstadoSistema.
 
@@ -24,7 +23,7 @@ Pico SDK
 
 VSCode com Raspberry Pi Pico SDK
 
-Simulação em Wokwi (opcional)
+Simulação em Wokwi
 
 📌 Funcionamento do Código
 

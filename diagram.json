@@ -1,0 +1,212 @@
+{
+          "version": 1,
+          "author": "Breno Tainan Aguiar",
+          "editor": "wokwi",
+          "parts": [
+                    {
+                              "type": "board-pi-pico-w",
+                              "id": "pico",
+                              "top": 44.75,
+                              "left": 301.15,
+                              "attrs": {
+                                        "builder": "pico-sdk"
+                              }
+                    },
+                    {
+                              "type": "wokwi-resistor",
+                              "id": "r1",
+                              "top": 157.55,
+                              "left": 220.8,
+                              "attrs": {
+                                        "value": "330"
+                              }
+                    },
+                    {
+                              "type": "wokwi-resistor",
+                              "id": "r2",
+                              "top": 195.95,
+                              "left": 220.8,
+                              "attrs": {
+                                        "value": "330"
+                              }
+                    },
+                    {
+                              "type": "wokwi-resistor",
+                              "id": "r3",
+                              "top": 234.35,
+                              "left": 220.8,
+                              "attrs": {
+                                        "value": "330"
+                              }
+                    },
+                    {
+                              "type": "wokwi-led",
+                              "id": "led1",
+                              "top": 198,
+                              "left": 167,
+                              "attrs": {
+                                        "color": "green"
+                              }
+                    },
+                    {
+                              "type": "wokwi-led",
+                              "id": "led2",
+                              "top": 159.6,
+                              "left": 167,
+                              "attrs": {
+                                        "color": "red"
+                              }
+                    },
+                    {
+                              "type": "wokwi-led",
+                              "id": "led3",
+                              "top": 121.2,
+                              "left": 167,
+                              "attrs": {
+                                        "color": "blue"
+                              }
+                    },
+                    {
+                              "type": "wokwi-pushbutton",
+                              "id": "btn1",
+                              "top": 63.8,
+                              "left": 211.2,
+                              "attrs": {
+                                        "color": "green"
+                              }
+                    },
+                    {
+                              "type": "wokwi-pushbutton",
+                              "id": "btn2",
+                              "top": 80.2,
+                              "left": 451.4,
+                              "rotate": 180,
+                              "attrs": {
+                                        "color": "green"
+                              }
+                    }
+          ],
+          "connections": [
+                    [
+                              "pico:GP0",
+                              "$serialMonitor:RX",
+                              "",
+                              []
+                    ],
+                    [
+                              "pico:GP1",
+                              "$serialMonitor:TX",
+                              "",
+                              []
+                    ],
+                    [
+                              "pico:GP13",
+                              "r3:2",
+                              "green",
+                              [
+                                        "h0"
+                              ]
+                    ],
+                    [
+                              "pico:GP12",
+                              "r2:2",
+                              "green",
+                              [
+                                        "h0"
+                              ]
+                    ],
+                    [
+                              "pico:GP11",
+                              "r1:2",
+                              "green",
+                              [
+                                        "h0"
+                              ]
+                    ],
+                    [
+                              "r3:1",
+                              "led1:A",
+                              "green",
+                              [
+                                        "v0"
+                              ]
+                    ],
+                    [
+                              "r2:1",
+                              "led2:A",
+                              "green",
+                              [
+                                        "v0"
+                              ]
+                    ],
+                    [
+                              "r1:1",
+                              "led3:A",
+                              "green",
+                              [
+                                        "v0"
+                              ]
+                    ],
+                    [
+                              "pico:GND.2",
+                              "led3:C",
+                              "black",
+                              [
+                                        "h-153.6",
+                                        "v38.4"
+                              ]
+                    ],
+                    [
+                              "led2:C",
+                              "led1:C",
+                              "black",
+                              [
+                                        "h-28.4",
+                                        "v38.4"
+                              ]
+                    ],
+                    [
+                              "led3:C",
+                              "led2:C",
+                              "green",
+                              [
+                                        "h-28.4",
+                                        "v38.4"
+                              ]
+                    ],
+                    [
+                              "pico:GP5",
+                              "btn1:2.r",
+                              "green",
+                              [
+                                        "h0"
+                              ]
+                    ],
+                    [
+                              "btn1:1.r",
+                              "pico:GND.1",
+                              "black",
+                              [
+                                        "h9.8",
+                                        "v-19.2"
+                              ]
+                    ],
+                    [
+                              "btn2:2.r",
+                              "pico:GP6",
+                              "yellow",
+                              [
+                                        "h0"
+                              ]
+                    ],
+                    [
+                              "btn2:1.r",
+                              "pico:GND.8",
+                              "black",
+                              [
+                                        "v0"
+                              ]
+                    ]
+          ],
+          "dependencies": {}
+}
